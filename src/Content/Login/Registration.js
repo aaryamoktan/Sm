@@ -10,16 +10,16 @@ const Registration = () => {
   const  [email,setEmail ] = useState()
   const  [password,setPasswprd] = useState()
   const nevigate = useNavigate()
-  const collectionref = collection(db,"useriddetails")
+  const collectionref = collection(db,"userdetails")
   const registreation = async()=>
   {
+    console.log("clcicked")
     try{
-      const reg = await getDoc(collectionref,{auth,email,password,fullName,date,sex})
-      if(reg)
-      {
+       const reg = await addDoc(collectionref,{email:email,password:password,fullname:fullName,date:date})
+       if(reg)
+       {
         nevigate("/")
-      }
-      
+       }
     }
     catch(err)
     {
