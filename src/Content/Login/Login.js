@@ -7,7 +7,7 @@ const nevigate = useNavigate()
 const submit = async()=>
 {
   try{
-    nevigate("/layout")
+    nevigate("/home")
   }
   catch(err)
   {

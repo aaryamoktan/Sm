@@ -5,7 +5,7 @@ export const Nevbar = ()=>
         <div className="nevbarMainContainer">
             <div className="nevbarInnerConatiner">
                 <div className="nevbar1sIcon">
-               <Link to="/layout" style={{textDecoration:"none",color:"black"}}>DMS</Link> 
+               <Link to="/home" style={{textDecoration:"none",color:"black"}}>DMS</Link> 
                 </div>
                 <div className="neverMiddle">
                 <ul>

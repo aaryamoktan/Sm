@@ -1,8 +1,12 @@
 import React from 'react'
-
+import { Nevbar } from '../../Component/Nevbar/Nevbar'
+import { Footer } from '../../Component/footer/Footer'
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+    <Nevbar/>
+    Home
+    <Footer/></div>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
-
+import { Nevbar } from '../../Component/Nevbar/Nevbar'
+import { Footer } from '../../Component/footer/Footer'
 const Menu = () => {
   return (
-    <div>Menu</div>
+    <div>
+    <Nevbar/>Menu
+    <Footer/></div>
   )
 }
 
