@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import {auth,db} from "../../firebase.js"
+import {createUserWithEmailAndPassword} from "firebase/auth"
+import {addDoc,collection, getDoc} from "firebase/firestore"
 const Registration = () => {
   const  [fullName,SetFullname ] = useState()
   const  [sex,setSex ] = useState()
@@ -8,9 +10,22 @@ const Registration = () => {
   const  [email,setEmail ] = useState()
   const  [password,setPasswprd] = useState()
   const nevigate = useNavigate()
-  const registreation = ()=>
+  const collectionref = collection(db,"useriddetails")
+  const registreation = async()=>
   {
-    nevigate("/")
+    try{
+      const reg = await getDoc(collectionref,{auth,email,password,fullName,date,sex})
+      if(reg)
+      {
+        nevigate("/")
+      }
+      
+    }
+    catch(err)
+    {
+      console.log(err)
+    }
+    
   }
   return (
     <>
