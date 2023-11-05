@@ -3,59 +3,22 @@ import './App.css';
 import './App.scss';
 import Messanger from './Content/Messanger/Messanger';
 import {
-  createBrowserRouter,
-  RouterProvider
+ BrowserRouter,Route,Routes
 } from "react-router-dom"
-import Layout from './Content/layout/Layout';
-import Home from './Content/Home/Home';
-import Profile from './Content/profile/Profile';
-import Menu from './Content/Menu/Menu';
 import Login from './Content/Login/Login';
 import Registration from './Content/Login/Registration';
-import Notification from './Content/Notification/Notification';
-import { Friends } from './Content/friends/Friends';
-const router = createBrowserRouter([
-  { 
-    path:"/",
-    element: <Login/>
-  ,
-    children:[
-      {
-        path:"/registraion",
-        element:<Registration/>
-      }
-      ,{
-      path:"/",
-      element:<Home/>
-    },
-    {
-      path:"/messanger",
-      element:<Messanger/>
-    },
-    {
-      path:"/friends",
-      element:<Friends/>
-    }, {
-      path:"/menu",
-      element:<Menu/>
-    },
-    {
-      path:"/profile",
-      element:<Profile/>
-    },
-    {
-      path:"/notification",
-      element:<Notification/>
-    },],
-    
-
-  }
-])
+import Layout from './Content/layout/Layout';
 function App() {
   return (
     <>
     
-    <RouterProvider router={router}/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login/>}/>
+        <Route path="/registraion" element={<Registration/>}/>
+        <Route path="/layout" element = {<Layout/>}/>
+      </Routes>
+    </BrowserRouter>
    
       
     </>

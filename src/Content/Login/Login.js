@@ -1,11 +1,18 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 const Login = () => {
 const [username,setusername] = useState();
 const [ password,setpassword] = useState();
-const submit = ()=>
+const nevigate = useNavigate()
+const submit = async()=>
 {
-
+  try{
+    nevigate("/layout")
+  }
+  catch(err)
+  {
+    console.log(err)
+  }
 }
   return (
     <div className='loginContainer'>
@@ -16,7 +23,7 @@ const submit = ()=>
         <button onClick={submit} >Login</button>
         <hr/>
         <p>If you don't have account</p>
-        <button><Link to="/registraion" style={{color:"black",textDecoration:"none"}}>Registration</Link></button>
+        <button ><Link to="/registraion" style={{color:"black",textDecoration:"none"}}>Registration</Link></button>
         </div>
       </div>
     </div>

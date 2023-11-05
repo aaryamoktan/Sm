@@ -5,12 +5,12 @@ export const Nevbar = ()=>
         <div className="nevbarMainContainer">
             <div className="nevbarInnerConatiner">
                 <div className="nevbar1sIcon">
-               <Link to="/" style={{textDecoration:"none",color:"black"}}>DMS</Link> 
+               <Link to="/layout" style={{textDecoration:"none",color:"black"}}>DMS</Link> 
                 </div>
                 <div className="neverMiddle">
                 <ul>
                     <li>
-                       <Link to="/" style={{textDecoration:"none",color:"black"}}>Home</Link>  
+                       <Link to="/home" style={{textDecoration:"none",color:"black"}}>Home</Link>  
                     </li>
                     <li>
                      <Link to="/messanger" style={{textDecoration:"none",color:"black"}}>Messanger</Link>    
