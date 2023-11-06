@@ -5,17 +5,17 @@ import {createUserWithEmailAndPassword} from "firebase/auth"
 import {addDoc,collection, getDoc} from "firebase/firestore"
 const Registration = () => {
   const  [fullName,SetFullname ] = useState()
-  const  [sex,setSex ] = useState()
+  const  [gender,setSex ] = useState()
   const  [date,setDate] = useState()
   const  [email,setEmail ] = useState()
   const  [password,setPasswprd] = useState()
   const nevigate = useNavigate()
-  const collectionref = collection(db,"userdetails")
+  const collectionref = collection(db,"mpp")
   const registreation = async()=>
   {
     console.log("clcicked")
     try{
-       const reg = await addDoc(collectionref,{email:email,password:password,fullname:fullName,date:date})
+       const reg = await addDoc(collectionref,{email:email,password:password,fullname:fullName,Date_of_birth:date})
        if(reg)
        {
         nevigate("/")
@@ -49,7 +49,7 @@ const Registration = () => {
             <br/> 
             <label>Email</label>
             <br/> 
-            <input type="email" onChange={(e)=>setEmail(e.target.name)}/><br/> 
+            <input type="email" onChange={(e)=>setEmail(e.target.value)}/><br/> 
             <label>Password:</label><br/> 
             <input type="password" onChange={(e)=>setPasswprd(e.target.value)}/>
             <button type="submit" onClick={registreation}>Registration</button>
