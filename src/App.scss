@@ -8,8 +8,9 @@
 {
     width:100%;
     height:10vh;
-    background:rgb(247, 249, 247);   
+    background:rgb(247, 249, 247); 
     font-family: 'Courier New', Courier, monospace;
+
     .nevbarInnerConatiner
     {
         position:relative;
@@ -139,5 +140,86 @@
                 height:3vh;
             }
         }
+    }
+}
+.homeContainer
+{
+    position:absolute;
+    width:100%;
+    height:auto;
+    display:flex;
+    
+    .homeInner1
+    {
+        position:relative;
+        width:80%;
+        margin-left:5%;
+        .homeInnerPost
+        {
+            position:relative;
+            height:100%;
+            height:25vh;
+            background: transparent;
+            .homeMainpost
+            {
+                position:relative;
+                width:100%;
+                margin-top: 20px;
+                height:auto;
+                .homeMainpostsub
+                {
+                    position:relative;
+                    margin-left:9%;
+                    height:90vh;
+                    .name
+                    {
+                        position:relative;
+                        display:Flex;
+                        i{
+                            position:relative;
+                            margin-left: 40px;
+                        }
+                    }
+                    img{
+                        position:relative;
+                        width:90%;
+                        height:80vh;   
+                    }
+                    .likeordislike
+                    {
+                        display:flex;
+                        margin-top: 10px;
+                        .like{
+                            position:relative;
+                            margin-left:20px;
+                        }
+                        .dislike{
+                            position:relative;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+            .homrInnerPost1
+            {
+                position:relative;
+                .file{
+                    position:relative;
+                    margin-left:600px;
+                    margin-top: 20px;
+                }
+                button{
+                    position:relative;
+                    width:100px;
+                    margin-left:-10px;
+                }
+            }
+        }
+    }
+    .homeInner2
+    {
+        position:sticky;
+        width:20%;
+        height:100vh;
     }
 }
