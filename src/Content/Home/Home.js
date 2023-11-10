@@ -17,14 +17,15 @@ const Home = () => {
       <div className='homeInner1'>
         <div className='homeInnerPost'>
           <div className='homrInnerPost1'>
-          <input onChange={(e)=>
-          settext(e.target.value)} style={{width:"100%",height:"17vh",marginTop:"10px"}}/>
+          <input className='inputc' onChange={(e)=>
+          settext(e.target.value)} style={{width:"90%",height:"17vh",marginTop:"10px"}}/>
           <input type="file" className='file' onChange={(e)=>
           setfile(e.target.value)}/>
           <button onClick={submit}>Post</button>
           </div>
           <div className="homeMainpost">
             <div className='homeMainpostsub'>
+            <div className='homeSS'>
               <div className='name'>
                 <p>Aarya Moktan</p><i>10-07-1998</i>
               </div>
@@ -34,7 +35,11 @@ const Home = () => {
               <div className='likeordislike'>
                 <p className='like'>{<AiFillHeart style={{color:"red" ,fontSize:"30px"}}/>}</p> <p class="dislike">{<AiOutlineMessage style={{color:"gray",marginLeft:"30px",fontSize:"30px"}}/>}</p>
               </div>
+              
             </div>
+            </div>
+
+
           </div>
         </div>
       </div>
