@@ -39,7 +39,11 @@ const Home = () => {
         </div>
       </div>
       <div className='homeInner2'>
-        news
+        <div className='news_feeds'>
+        <div className='imgSection'>
+        <img src="https://media.gettyimages.com/id/1289727521/photo/news-reporter-live-broadcasting-on-road.jpg?s=612x612&w=0&k=20&c=8YdimKQ8rGGIqI4C1etxIvkF8E24DzXiYMON8WvpK7I="/>
+          </div>
+        </div>
       </div>
     </div>
     <Footer/></div>

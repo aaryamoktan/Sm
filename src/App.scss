@@ -9,6 +9,7 @@
     width:100%;
     height:10vh;
     background:rgb(247, 249, 247); 
+    box-shadow: 1px 1.5px 12px rgb(166, 166, 166);
     font-family: 'Courier New', Courier, monospace;
 
     .nevbarInnerConatiner
@@ -146,20 +147,24 @@
 {
     position:absolute;
     width:100%;
-    height:auto;
+    height:100vh;
     display:flex;
+    background-color: rgb(231, 248, 231);
     
     .homeInner1
     {
         position:relative;
         width:80%;
         margin-left:5%;
+        height: auto;
+        box-shadow: 1px 10px 10px rgb(138, 137, 137);
         .homeInnerPost
         {
             position:relative;
-            height:100%;
+            margin-top:12px;
             height:25vh;
             background: transparent;
+            box-shadow: 1px 10px 10px rgb(216, 210, 210);
             .homeMainpost
             {
                 position:relative;
@@ -170,7 +175,7 @@
                 {
                     position:relative;
                     margin-left:9%;
-                    height:90vh;
+                    height:120vh;
                     .name
                     {
                         position:relative;
@@ -221,5 +226,31 @@
         position:sticky;
         width:20%;
         height:100vh;
+        
     }
+}
+.homeInner2
+{
+    position:relative;
+    width:100%;
+    margin-top:30px;
+    height:auto;
+    box-shadow: 2px 2px 2px black;
+    .news_feeds
+    {
+        position:relative;
+        .imgSection{
+            position:relative;
+            width: 100% ;
+            height:45%;
+           img{
+            position:relative;
+            width:90%;
+            margin-left: 5%;
+            box-shadow: 1px 1px 20px rgb(134, 133, 133);;
+            height:100%;
+           };
+        }
+    }
+    
 }
