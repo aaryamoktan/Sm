@@ -254,6 +254,31 @@
     .news_feeds
     {
         position:relative;
+        .news_list
+        {
+         position:relative;
+         margin-left: 30px;
+         h1{
+            position:relative;
+            margin: 45px;
+            font-size:25px;
+            color:rgb(113, 113, 113);
+         }
+         ul{
+            position:relative;
+            list-style: none;
+         }
+         li{
+            position:relative;
+            margin-top: 20px;
+         }
+         img{
+            position:relative;
+            width:20%;
+            
+         }
+        
+        }
         .imgSection{
             position:relative;
             width: 100% ;
@@ -265,6 +290,7 @@
             box-shadow: 1px 1px 20px rgb(134, 133, 133);;
             height:100%;
            };
+          
         }
     }
     
