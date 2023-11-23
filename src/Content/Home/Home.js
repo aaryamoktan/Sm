@@ -49,7 +49,6 @@ const Home = () => {
           <div className='news_list'>
           <h1>Today News</h1>
             <ul>
-             
               <li><img src="https://idronline.org/wp-content/uploads/2023/11/Renewable-energy.jpg" alt="my image"/><a target="blank" href="https://idronline.org/article/climate-emergency/lay-of-the-land-a-road-map-for-the-renewable-energy-rookie/">Lay of the land: A road map for the renewable energy rookie</a></li>
               <li><img src="https://idronline.org/wp-content/uploads/2022/10/Humour-diwali.jpg.webp" alt="my image"/><a target="blank" href="https://idronline.org/article/humour/nonprofit-diwali-what-we-want-vs-what-we-get-nonprofit-humour/">Nonprofit Diwali: What we want vs what we get</a></li>
               <li><img src="https://idronline.org/wp-content/uploads/2023/06/snakes-and-ladders.jpg" alt="my image"/><a target="blank" href="https://idronline.org/features/gender/teaching-newly-married-women-how-to-navigate-patriarchal-spaces/">Teaching newly married women how to navigate patriarchal spaces</a></li>

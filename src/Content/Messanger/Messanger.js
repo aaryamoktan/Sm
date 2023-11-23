@@ -5,7 +5,11 @@ const Messanger = () => {
   return (
     <div>
     <Nevbar/>
-    Messanger
+    <div className='messangerContainer'>
+      <div className='messangerinner'>
+
+      </div>
+    </div>
     <Footer/></div>
   )
 }

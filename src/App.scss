@@ -295,3 +295,54 @@
     }
     
 }
+.friendsContainer
+{
+    position: relative;
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    .friendsleft
+    {
+        position:relative;
+        width:20%;
+        height:90vh;
+        background-color: rgb(234, 236, 234);
+    }
+    .friendsright
+    {
+        position:relative;
+        width:80%;
+        height:auto;
+        background-color: rgb(242, 253, 242);
+        display:flex;
+       justify-content: center;
+        flex-wrap: wrap ;
+        .friendslist
+        {
+            position: relative;
+            width:30%;
+            height:61%;
+            background:rgb(73, 75, 73);
+            margin-top: 30px;
+            margin-left: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 10px rgb(77, 76, 76);
+        }
+    }
+}
+.messangerContainer
+{
+    position:relative;
+    width:100%;
+    height:90vh;
+    background:rgb(245, 245, 245);
+    .messangerinner
+    {
+        position:relative;
+        width:50%;
+        margin-left: 25%;
+        height:90vh;
+        background: rgb(195, 232, 198);
+    }
+}
