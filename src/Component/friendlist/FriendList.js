@@ -9,7 +9,11 @@ const FriendList = () => {
         return(
           <>
           <div className='friendListc'>
-            {ele.name}
+          <div className='name'>{ele.name}</div>
+            <div className='image'>
+              <img src={ele.pic}/>
+            </div>
+            <button>Add Friends</button>
             </div>
           </>
         )
