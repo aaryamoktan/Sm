@@ -7,7 +7,7 @@ export const Friends = ()=>
         <><Nevbar/>
            <div>
            <div className="friendsContainer">
-            <div className="friendsleft">left </div>
+            
             <div className="friendsright">
                 <div className="friendslist">
                 <FriendList/>
